@@ -10,6 +10,11 @@ namespace Console_educational_project
                 Console.OutputEncoding = Encoding.UTF8;
             }
             Console.WriteLine("Hello, World!");
+
+            StringsOperation stringsOperation = new StringsOperation();
+            stringsOperation.Interpolate_1();
+            stringsOperation.Interpolate_2();
+
         }
     }
 }

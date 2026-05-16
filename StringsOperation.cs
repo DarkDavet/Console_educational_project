@@ -22,6 +22,18 @@ namespace Console_educational_project
         public void Interpolate_2()
         {
             //  Используя интерполяцию, как бы выглядела фраза: "Игрок [Имя] набрал [Очки] очков"
+            string name = "Алексей";
+            int score = 250;
+
+            string message = $"Игрок {name} набрал {score} очков";
+
+            Console.WriteLine(message);
+        }
+
+        public void Interpolate_3()
+        {
+            string name = "Andrew";
+            string message = $"Мой учитель математика - "; 
         }
     }
 }
