@@ -18,5 +18,10 @@ namespace Console_educational_project
 
             Console.WriteLine(message);
         }
+
+        public void Interpolate_2()
+        {
+            //  Используя интерполяцию, как бы выглядела фраза: "Игрок [Имя] набрал [Очки] очков"
+        }
     }
 }
