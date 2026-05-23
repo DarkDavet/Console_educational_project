@@ -50,6 +50,23 @@ namespace Console_educational_project
             string result = string.Join(", ", words);
 
             Console.WriteLine(result);
+/*string[] words = { "Warrior", "Mage", "Rogue" };
+string result = "";
+
+for (int i = 0; i < words.Length; i++)
+{
+    result += words[i];
+
+
+    if (i < words.Length - 1)
+    {
+        result += ", ";
+    }
+}
+
+
+Console.WriteLine(result); 
+*/
         }
     }
 }
