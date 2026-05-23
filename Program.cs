@@ -9,7 +9,7 @@ namespace Console_educational_project
             {
                 Console.OutputEncoding = Encoding.UTF8;
             }
-           
+  
         }
     }
 }
