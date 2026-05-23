@@ -42,12 +42,14 @@ namespace Console_educational_project
 
             string[] classes = input.Split(','); // Теперь в массиве 3 элемента
                                                  //стало:
-            Console.WriteLine(classes);  // ?
+           // Console.WriteLine(classes);  // ?
 
-        /*string[] words = { "warrior", "mage", "rogue" };
-string result = string.Join(", ", words);
+            Console.WriteLine(classes[0] + " " + classes[1] + " "+ classes[2]);
 
-Console.WriteLine(result);*/
+            string[] words = { "warrior", "mage", "rogue" };
+            string result = string.Join(", ", words);
+
+            Console.WriteLine(result);
         }
     }
 }
