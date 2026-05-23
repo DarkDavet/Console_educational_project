@@ -70,5 +70,24 @@ namespace Console_educational_project
 
             Console.WriteLine(result); 
         }
+
+        public void JoinStrings()
+        {
+            string[] classes = { "Warrior", "Mage", "Rogue" };
+            // было:
+            Console.WriteLine(classes);
+            string result = string.Join(" vs ", classes);
+            // стало:
+            Console.WriteLine(result);
+        }
+
+        /*
+         Задача #1: «Парсер инвентаря»
+         - У нас есть строка от старой системы: "Меч|Щит|Зелье|Шлем".
+         - Раздели её по символу |.
+         - Выведи в консоль количество предметов (используй .Length).
+         - Замени «Зелье» на «Супер-зелье» в массиве.
+         - Склей обратно через запятую и выведи результат.
+         */
     }
 }
