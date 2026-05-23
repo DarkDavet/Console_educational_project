@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Console_educational_project
 {
-    internal class EnemySearching
+    public class EnemySearching
     {
         private double[] enemiesHealth = { 50.3, 3, 80, 5, 100, 20 };
 
@@ -20,6 +20,14 @@ namespace Console_educational_project
                     Console.WriteLine("Враг найден! HP: " + hp);
                 }
 
+            }
+
+            for (int i = 0; i < enemiesHealth.Length; i++)
+            {
+                if (enemiesHealth[i] > 20)
+                {
+                    Console.WriteLine("Враг найден! HP: " + enemiesHealth[i]);
+                }
             }
         }
     }

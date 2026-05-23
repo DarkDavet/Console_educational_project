@@ -2,18 +2,19 @@
 
 namespace Console_educational_project
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)     // Главый метод всего консольного приложения, точка входа, откуда всё начинает запускаться
         {
             {
                 Console.OutputEncoding = Encoding.UTF8;
             }
-            Console.WriteLine("Hello, World!");
 
-            StringsOperation stringsOperation = new StringsOperation();
-            stringsOperation.Interpolate_1();
-            stringsOperation.Interpolate_2();
+            StringsOperation stringsOperation = new StringsOperation();  // создание объекта класса StringOperation с именем stringIperation
+            //stringsOperation.Interpolate_1();   // вызов метода Interpolate_1() из класса StringsOperation через объект stringsOperation
+            //stringsOperation.Interpolate_2();   // вызов метода Interpolate_2() из класса StringsOperation через объект stringsOperation
+
+            stringsOperation.SplitStrings();   // вызов метода SplitStrings() из класса StringsOperation через объект stringsOperation
 
         }
     }

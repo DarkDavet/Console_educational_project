@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Console_educational_project
 {
-    internal class SimpleShop
+    public class SimpleShop
     {
         private int playerMoney = 100;
         private int itemPrice = 120;

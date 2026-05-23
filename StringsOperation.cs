@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Console_educational_project
 {
-    internal class StringsOperation
+    public class StringsOperation
     {
         public void Interpolate_1()
         {
@@ -30,10 +30,19 @@ namespace Console_educational_project
             Console.WriteLine(message);
         }
 
-        public void Interpolate_3()
+        /// <summary>
+        /// Разделяет строку на массив строк, отделяя элементы по разделителю
+        /// </summary>
+        public void SplitStrings()
         {
-            string name = "Andrew";
-            string message = $"Мой учитель математика - "; 
+            string input = "Warrior,Mage,Rogue";
+
+            //было:
+            Console.WriteLine(input);
+
+            string[] classes = input.Split(','); // Теперь в массиве 3 элемента
+                                                 //стало:
+            Console.WriteLine(classes);  // ?
         }
     }
 }
