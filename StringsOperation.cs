@@ -84,6 +84,17 @@ namespace Console_educational_project
         public void Task_1()
         {
             string rawData = "Меч|Щит|Зелье|Шлем";
+             string[] inventory = rawData.Split('|');
+              Console.WriteLine($"{inventory.Length}");
+               for (int i = 0; i < inventory.Length; i++)
+        {
+            if (inventory[i] == "Зелье")
+            {
+                inventory[i] = "Супер зелье";
+            }
+        }
+          string result = string.Join(", ", inventory);
+        Console.WriteLine(result);
         }
 
         /*
