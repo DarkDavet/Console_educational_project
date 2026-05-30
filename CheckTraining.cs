@@ -48,9 +48,9 @@ namespace Console_educational_project
         public void Check_4()
         {
             int[] teamA = { 1, 2, 3 };
-            int[] teamB = teamA; 
+            int[] teamB = teamA;
 
-            teamB[0] = 999; 
+            teamB[0] = 999;
 
             Console.WriteLine(teamA[0]); // Что выведет здесь?
 
