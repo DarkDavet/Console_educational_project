@@ -15,7 +15,7 @@ namespace Console_educational_project
             //stringsOperation.Interpolate_2();   // вызов метода Interpolate_2() из класса StringsOperation через объект stringsOperation
 
             stringsOperation.SplitStrings();   // вызов метода SplitStrings() из класса StringsOperation через объект stringsOperation
-
+            stringsOperation.Task_1();
         }
     }
 }
