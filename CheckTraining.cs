@@ -27,6 +27,27 @@ namespace Console_educational_project
             heroName = heroName.ToUpper(); // Метод делает строку заглавными буквами
 
             Console.WriteLine(heroName); // Что выведет здесь?
+
+            // В C# строки нельзя изменить.
+            // Метод ToUpper() не меняет старую строку, а создает и возвращает новую.
+            // Чтобы сработало, нужно написать: heroName = heroName.ToUpper();.
+        }
+
+        public void Check_3()
+        {
+            string bagA = "";
+            string bagB = null;
+
+        }
+
+        public void Check_4()
+        {
+            int[] teamA = { 1, 2, 3 };
+            int[] teamB = teamA; 
+
+            teamB[0] = 999; 
+
+            Console.WriteLine(teamA[0]); // Что выведет здесь?
         }
     }
 }
