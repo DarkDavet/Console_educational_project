@@ -24,7 +24,7 @@ namespace Console_educational_project
         public void Check_2()
         {
             string heroName = "геральт";
-            heroName.ToUpper(); // Метод делает строку заглавными буквами
+            heroName = heroName.ToUpper(); // Метод делает строку заглавными буквами
 
             Console.WriteLine(heroName); // Что выведет здесь?
         }

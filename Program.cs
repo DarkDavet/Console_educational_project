@@ -16,6 +16,8 @@ namespace Console_educational_project
 
             stringsOperation.SplitStrings();   // вызов метода SplitStrings() из класса StringsOperation через объект stringsOperation
             stringsOperation.Task_1();
+            CheckTraining trainer = new CheckTraining();
+            trainer.Check_2();
         }
     }
 }
