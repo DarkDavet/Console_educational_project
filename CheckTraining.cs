@@ -38,6 +38,11 @@ namespace Console_educational_project
             string bagA = "";
             string bagB = null;
 
+            // bagA — это пустой кошелек (он есть, просто в нем 0 монет).
+            // bagB — это когда у игрока вообще нет кошелька.
+
+            // Можно попробовать вызвать bagA.Length (вернет 0) и bagB.Length (программа вылетит с ошибкой NullReferenceException).
+
         }
 
         public void Check_4()
@@ -48,6 +53,34 @@ namespace Console_educational_project
             teamB[0] = 999; 
 
             Console.WriteLine(teamA[0]); // Что выведет здесь?
+
+            // Суть: Массивы (и любые классы) — это «ссылочные» типы.
+            // Переменные хранят не сам объект, а адрес в памяти.
+            // Когда мы пишем teamB = teamA, мы просто копируем адрес. 
+            // Оба имени указывают на один и тот же массив.
+        }
+
+        public void Check_5()
+        {
+            int playerHp = 100;
+            Heal(playerHp);
+
+            Console.WriteLine(playerHp); // Что выведет здесь?
+        }
+
+        public void Heal(int hp)
+        {
+            hp += 50;
+        }
+
+        public void Check_6()
+        {
+            string magicWord = "Абра";
+            string spell = magicWord;
+
+            magicWord += "Кадабра"; // Создаем новую строку
+
+            Console.WriteLine(spell); // Что выведет здесь?
         }
     }
 }
