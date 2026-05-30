@@ -81,6 +81,11 @@ namespace Console_educational_project
             Console.WriteLine(result);
         }
 
+        public void Task_1()
+        {
+            string rawData = "Меч|Щит|Зелье|Шлем";
+        }
+
         /*
          Задача #1: «Парсер инвентаря»
          - У нас есть строка от старой системы: "Меч|Щит|Зелье|Шлем".
