@@ -120,7 +120,7 @@ namespace Console_educational_project
             if (parts.Length == 3 && parts[0] == "teleport")
             {
                 int x = int.Parse(parts[1]);
-                int y = int.Parse(parts[2);
+                int y = int.Parse(parts[2]);
                 Console.WriteLine($"Телепортация в точку Х: {x}, Ү: {y} прошла успешно!");
             }
             else
