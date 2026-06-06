@@ -116,7 +116,7 @@ namespace Console_educational_project
         public void Task_2()
         {
             Console.WriteLine("Введите команду:");
-            string userInput = "/teleport 100 250";
+            string userInput = "/teleport 100 250"; //
         }
     }
 }
