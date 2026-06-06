@@ -19,5 +19,6 @@ namespace Console_educational_project
             Title = title;
             Artist = artist;
         }
+
     }
 }
