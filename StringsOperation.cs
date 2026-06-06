@@ -114,12 +114,19 @@ namespace Console_educational_project
         */
 
         public void Task_2(string[] args)
-     {
-        string coordinatesString = "100,250";
-        string[] parts = coordinatesString.Split(',');
-        int x = int.Parse(parts[0]);
-        int y = int.Parse(parts[1]);
-        Console.WriteLine($"Телепортация в точку Х: {x}, Ү: {y} прошла успешно!"); 
-     }
+        {
+            string coordinatesString = "teleport, 100,250";
+            string[] parts = coordinatesString.Split(',');
+            if (parts.Length == 3 && parts[0] == "teleport")
+            {
+                int x = int.Parse(parts[1]);
+                int y = int.Parse(parts[2);
+                Console.WriteLine($"Телепортация в точку Х: {x}, Ү: {y} прошла успешно!");
+            }
+            else
+            {
+                Console.WriteLine("Ошибка: неверный формат команды.");
+            }
+        }
     }
 }
