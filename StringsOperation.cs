@@ -112,5 +112,11 @@ namespace Console_educational_project
         - Преврати их в числа (используй int.Parse()).
         - Выведи сообщение: "Телепортация в точку X: 100, Y: 250 прошла успешно!" используя интерполяцию.
         */
+
+        public void Task_2()
+        {
+            Console.WriteLine("Введите команду:");
+            string userInput = "/teleport 100 250";
+        }
     }
 }
