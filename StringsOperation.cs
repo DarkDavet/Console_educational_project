@@ -113,10 +113,13 @@ namespace Console_educational_project
         - Выведи сообщение: "Телепортация в точку X: 100, Y: 250 прошла успешно!" используя интерполяцию.
         */
 
-        public void Task_2()
-        {
-            Console.WriteLine("Введите команду:");
-            string userInput = "/teleport 100 250"; //
-        }
+        public void Task_2(string[] args)
+     {
+        string coordinatesString = "100,250";
+        string[] parts = coordinatesString.Split(',');
+        int x = int.Parse(parts[0]);
+        int y = int.Parse(parts[1]);
+        Console.WriteLine($"Телепортация в точку Х: {x}, Ү: {y} прошла успешно!"); 
+     }
     }
 }
