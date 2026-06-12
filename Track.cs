@@ -14,7 +14,14 @@ namespace Console_educational_project
 
     public string Title 
     { 
-        get { return _title; } 
+        get 
+            { 
+                return _title; 
+            }
+        private set 
+            { 
+                _title = value; 
+            }
     }
     public string Artist 
     { 
