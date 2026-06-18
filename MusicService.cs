@@ -43,5 +43,27 @@ namespace Console_educational_project
                 Console.WriteLine($"Включена песня {song_title} артиста {track_3.Artist}");
             }
         }
+
+        public void ListManipulations()
+        {
+            List<Track> music_library = new List<Track>();
+
+            // 1. Добавляем песни в библиотеку
+            music_library.Add(track_1);
+            music_library.Add(track_2);
+            music_library.Add(track_3);
+
+            Console.WriteLine($"В плейлисте сейчас треков: {music_library.Count}");
+
+            // 2. Убираем первый трек
+            music_library.Remove(track_1);
+
+            // 3. Смотрим, какие треки теперь в библиотеке
+            Console.WriteLine("Оставшиеся треки:");
+            foreach (Track track in music_library)
+            {
+                Console.WriteLine("- " + track.Title);
+            }
+        }
     }
 }
