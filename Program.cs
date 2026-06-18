@@ -10,7 +10,10 @@ namespace Console_educational_project
                 Console.OutputEncoding = Encoding.UTF8;
             }
             MusicService spotify = new MusicService();
-            spotify.Register();
+            spotify.Register("Brutal", "Gdragon");
+            
+
+            spotify.RemoveSong("Brutal", "Gdragon");
             spotify.Play("Brutal");
         }
     }
