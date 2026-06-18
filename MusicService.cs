@@ -27,5 +27,21 @@ namespace Console_educational_project
             track_3 = new Track("Smells Like Teen Spirit", "Nirvana");
             Console.WriteLine($"Песня {track_3.Title} артиста {track_3.Artist} успешно зарегистрирована!");
         }
+
+        public void Play(string song_title)
+        {
+            if (song_title == track_1.Title)
+            {
+                Console.WriteLine($"Включена песня {song_title} артиста {track_1.Artist}");
+            }
+            if (song_title == track_2.Title)
+            {
+                Console.WriteLine($"Включена песня {song_title} артиста {track_2.Artist}");
+            }
+            if (song_title == track_3.Title)
+            {
+                Console.WriteLine($"Включена песня {song_title} артиста {track_3.Artist}");
+            }
+        }
     }
 }

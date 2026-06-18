@@ -11,6 +11,7 @@ namespace Console_educational_project
             }
             MusicService spotify = new MusicService();
             spotify.Register();
+            spotify.Play("Brutal");
         }
     }
 }
