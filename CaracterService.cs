@@ -1,6 +1,9 @@
+﻿
+namespace Console_educational_project
+{
     public class CharacterService
     {
-        
+
         private List<Character> character_library = new List<Character>();
 
 
@@ -11,12 +14,12 @@
             Console.WriteLine($"Персонаж {character.Name} (Здоровье: {character.Health}, Уровень: {character.Level}) успешно зарегистрирован!");
         }
 
-        
+
         public void RemoveCharacter(string character_name)
         {
             Character characterToRemove = null;
 
-            
+
             foreach (var character in character_library)
             {
                 if (character.Name == character_name)
@@ -26,7 +29,7 @@
                 }
             }
 
-            
+
             if (characterToRemove != null)
             {
                 character_library.Remove(characterToRemove);
@@ -38,6 +41,8 @@
             }
         }
     }
+}
+
 
    
    
