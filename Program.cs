@@ -10,7 +10,8 @@ namespace Console_educational_project
                 Console.OutputEncoding = Encoding.UTF8;
             }
             ListTasks listTasks = new ListTasks();
-            listTasks.DemonstrateListWork();
+            //listTasks.DemonstrateListWork();
+            listTasks.task2();
         }
     }
 }

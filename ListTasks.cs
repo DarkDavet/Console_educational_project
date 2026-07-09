@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Console_educational_project
- {
+{
     public class ListTasks
     {
         public void DemonstrateListWork()
@@ -81,54 +81,63 @@ namespace Console_educational_project
        Если да, выведи в консоль: "Сессия активна".
         */
         public void ExecuteTask1()
-         {
-  
+        {
 
 
-        List<string> serverLogs = new List<string>();
+
+            List<string> serverLogs = new List<string>();
 
 
-        serverLogs.Add("Пользователь вошел");
-        serverLogs.Add("Ошибка подключения к БД");
-        serverLogs.Add("Файл скачан");
+            serverLogs.Add("Пользователь вошел");
+            serverLogs.Add("Ошибка подключения к БД");
+            serverLogs.Add("Файл скачан");
 
 
-        Console.WriteLine($"Всего записано логов: {serverLogs.Count}");
-        Console.WriteLine($"Текущие логи: {string.Join(" | ", serverLogs)}\n");
+            Console.WriteLine($"Всего записано логов: {serverLogs.Count}");
+            Console.WriteLine($"Текущие логи: {string.Join(" | ", serverLogs)}\n");
 
-        Console.WriteLine("-> Исправляем ошибку... Удаление лога 'Ошибка подключения к БД'.");
-        serverLogs.Remove("Ошибка подключения к БД");
-        Console.WriteLine($"Осталось логов: {serverLogs.Count}\n");
-
-
-        Console.WriteLine("Проверка статуса сессии...");
-        if (serverLogs.Contains("Пользователь вошел"))
-           {
-        Console.WriteLine("Сессия активна");
-           }
-        else
-           {
-        Console.WriteLine("Предупреждение: Лог входа не найден.");
-           }
-
-         }
-
-public void task2()
-{
-    static void Main()
-    {
-
-        List<string> sensors = new() { "Кухня", "Спальня", "Прихожая" };
+            Console.WriteLine("-> Исправляем ошибку... Удаление лога 'Ошибка подключения к БД'.");
+            serverLogs.Remove("Ошибка подключения к БД");
+            Console.WriteLine($"Осталось логов: {serverLogs.Count}\n");
 
 
-        sensors.Insert(0, "Протечка воды");
+            Console.WriteLine("Проверка статуса сессии...");
+            if (serverLogs.Contains("Пользователь вошел"))
+            {
+                Console.WriteLine("Сессия активна");
+            }
+            else
+            {
+                Console.WriteLine("Предупреждение: Лог входа не найден.");
+            }
 
-        Console.WriteLine($"Датчик на индексе 1: {sensors[1]}");
+        }
+
+        /*
+          Задание 2: «Контроллер Умного Дома»
+        Цель: Понять, что списки работают с индексами, но элементы в них могут динамически сдвигаться при использовании Insert.
+        Текст задания:Умный дом опрашивает датчики по очереди. 
+        Список датчиков: List<string> sensors = new() { "Кухня", "Спальня", "Прихожая" };
+        К системе подключили новый критически важный датчик "Протечка воды". 
+        Вставь его в самое начало списка (на индекс 0), используя метод .Insert(), чтобы он опрашивался первым.
+        Выведи в консоль датчик, который теперь оказался на втором месте (индекс 1).
+        Выведи весь список датчиков в одну строку через запятую.
+        Вопрос на подумать: Что произошло с индексом датчика "Кухня" после того, как мы вставили датчик протечки?
+         */
+
+        public void task2()
+        {
+
+            List<string> sensors = new() { "Кухня", "Спальня", "Прихожая" };
 
 
-        Console.WriteLine(string.Join(", ", sensors));
-    }
-}
+            sensors.Insert(0, "Протечка воды");
 
+            Console.WriteLine($"Датчик на индексе 1: {sensors[1]}");
+
+
+            Console.WriteLine(string.Join(", ", sensors));
+
+        }
     }
 }
