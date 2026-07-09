@@ -11,7 +11,8 @@ namespace Console_educational_project
             }
             ListTasks listTasks = new ListTasks();
             //listTasks.DemonstrateListWork();
-            listTasks.task2();
+            //listTasks.task2();
+            listTasks.CleanChat();
         }
     }
 }
