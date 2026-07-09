@@ -194,6 +194,20 @@ public void CleanChat()
        Тебе нужно использовать цикл for, причем идти по списку с конца в начало (от .Count - 1 до 0). 
        Попробуй разобраться, почему при удалении элементов с конца программа работает корректно, а с начала — пропускает элементы или падает.
        */
+ static void task5()
+    {
+        List<int> temperatures = new() { 22, -99, 25, 23, -99, 19 };
 
+        for (int i = temperatures.Count - 1; i >= 0; i--)
+        {
+            if (temperatures[i] == -99)
+            {
+                temperatures.RemoveAt(i); 
+            }
+        }
+
+        Console.WriteLine(string.Join(", ", temperatures));
     }
 }
+    }
+
