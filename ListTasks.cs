@@ -172,5 +172,16 @@ public void CleanChat()
         Удали самый старый адрес из конца списка, чтобы длина осталась прежней.
         Выведи получившийся список сайтов. Он должен выглядеть как: microsoft.com, google.com, github.com.
         */
+        public void Main()
+    {
+        List<string> history = new() { "google.com", "github.com", "habr.com" }; 
+        string newSite = "microsoft.com";
+        history.Insert(0, newSite);
+        {
+            history.RemoveAt(history.Count - 1);
+        }
+        Console.WriteLine(string.Join(", ", history));
+   
+    }
     }
 }
