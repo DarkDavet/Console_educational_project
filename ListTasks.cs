@@ -148,19 +148,18 @@ namespace Console_educational_project
         "Привет", "[SPAM]", "[SPAM]", "Нужна помощь", "Купи слона [SPAM]", "Спасибо"
         */
 
-        public void CleanChat()
+public void CleanChat()
+   {
+    List<string> chatMessages = new List<string>() { "Привет", "[SPAM]", "[SPAM]", "Нужна помощь", "Купи слона [SPAM]", "Спасибо" };
+    for (int i = chatMessages.Count - 1; i >= 0; i--)
+    {
+        if (chatMessages[i].Contains("[SPAM]"))
         {
-            List<string> chatMessages = new List<string>() {"Привет", "[SPAM]", "[SPAM]", "Нужна помощь", "Купи слона [SPAM]", "Спасибо" };
-            for (int i = chatMessages.Count - 1; i >= 0; i--)
-            {
-                if (chatMessages[i].Contains("[SPAM]"))
-                {
-                    chatMessages.RemoveAt(i);
-                }
-            }
-            Console.WriteLine(string.Join(", ", chatMessages));
+            chatMessages.RemoveAt(i);
         }
-
+    }
+    Console.WriteLine(string.Join(", ", chatMessages));
+  }
         /*
          Задание 4: «История переходов (Браузер)» (Симуляция сдвига данных)
         Цель: Понять, как реализовать историю «последних действий» (стек/очередь) с фиксированным размером с помощью List.
