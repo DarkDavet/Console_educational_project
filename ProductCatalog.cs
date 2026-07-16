@@ -46,6 +46,25 @@ public void TotalPrice()
 
     Console.WriteLine($"Общая стоимость всех товаров: {total} руб.");
  }
+      public void AddProduct()
+{
+    Console.Write("Введите название товара ");
+    string name = Console.ReadLine();
+
+    Console.Write("Введите цену товара ");
+    if (!decimal.TryParse(Console.ReadLine(), out decimal price))
+    {
+        Console.WriteLine(" Неверный формат цены");
+        return;
+    }
+
+    Console.Write("Введите категорию товара ");
+    string category = Console.ReadLine();
+
+    shopCart.Add(new Product { Name = name, Price = price, Category = category });
+    Console.WriteLine("Товар добавлен");
+}
+
 
     }
 }
