@@ -208,6 +208,7 @@ public void CleanChat()
 
         Console.WriteLine(string.Join(", ", temperatures));
     }
+    
         /*
          Задание «Каталог товаров в интернет-магазине»:
         1) Создай класс Product (Товар), у которого будут три поля: Name (название), Price (цена) и Category (категория).
