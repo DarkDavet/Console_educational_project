@@ -14,5 +14,13 @@ namespace Console_educational_project
             new Product { Name = "Мышка", Price = 3000, Category = "Аксессуары" },
             new Product { Name = "Клавиатура", Price = 5000, Category = "Аксессуары" }
         };
-     }
+
+        public void PrintAllProducts()
+        {
+            foreach (Product prod in shopCart)
+            {
+                Console.WriteLine($"Товар: {prod.Name}, Цена: {prod.Price} руб. [{prod.Category}]");
+            }
+        }
+    }
 }
