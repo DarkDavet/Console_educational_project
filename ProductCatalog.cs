@@ -22,5 +22,17 @@ namespace Console_educational_project
                 Console.WriteLine($"Товар: {prod.Name}, Цена: {prod.Price} руб. [{prod.Category}]");
             }
         }
+public void TotalPrice()
+ {
+    decimal total = 0;
+    
+    foreach (var product in shopCart)
+    {
+        total += product.Price;
+    }
+
+    Console.WriteLine($"Общая стоимость всех товаров: {total} руб.");
+ }
+
     }
 }

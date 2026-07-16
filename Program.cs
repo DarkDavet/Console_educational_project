@@ -11,6 +11,7 @@ namespace Console_educational_project
             }
             ProductCatalog productCatalog = new ProductCatalog();
             productCatalog.PrintAllProducts();
+            productCatalog.TotalPrice();
         }
     }
 }
