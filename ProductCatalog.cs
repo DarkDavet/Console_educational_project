@@ -20,7 +20,7 @@ namespace Console_educational_project
         а предлагала пользователю выбор действий через консоль (1 — Показать товары, 2 — Добавить товар, 3 — Показать сумму, 0 — Выход).
         */
     public class ProductCatalog
-     {
+    {
         private List<Product> shopCart = new List<Product>
         {
             new Product { Name = "Ноутбук", Price = 70000, Category = "Электроника" },
@@ -35,36 +35,34 @@ namespace Console_educational_project
                 Console.WriteLine($"Товар: {prod.Name}, Цена: {prod.Price} руб. [{prod.Category}]");
             }
         }
-public void TotalPrice()
- {
-    decimal total = 0;
+        public void TotalPrice()
+        {
+            decimal total = 0;
     
-    foreach (var product in shopCart)
-    {
-        total += product.Price;
-    }
+            foreach (var product in shopCart)
+            {
+                total += product.Price;
+            }
 
-    Console.WriteLine($"Общая стоимость всех товаров: {total} руб.");
- }
-      public void AddProduct()
-{
-    Console.Write("Введите название товара ");
-    string name = Console.ReadLine();
+            Console.WriteLine($"Общая стоимость всех товаров: {total} руб.");
+        }
+        public void AddProduct()
+        {
+            Console.Write("Введите название товара ");
+            string name = Console.ReadLine();
 
-    Console.Write("Введите цену товара ");
-    if (!decimal.TryParse(Console.ReadLine(), out decimal price))
-    {
-        Console.WriteLine(" Неверный формат цены");
-        return;
-    }
+            Console.Write("Введите цену товара ");
+            if (!decimal.TryParse(Console.ReadLine(), out decimal price))
+            {
+                Console.WriteLine(" Неверный формат цены");
+                return;
+            }
 
-    Console.Write("Введите категорию товара ");
-    string category = Console.ReadLine();
+            Console.Write("Введите категорию товара ");
+            string category = Console.ReadLine();
 
-    shopCart.Add(new Product { Name = name, Price = price, Category = category });
-    Console.WriteLine("Товар добавлен");
-}
-
-
+            shopCart.Add(new Product { Name = name, Price = price, Category = category });
+            Console.WriteLine("Товар добавлен");
+        }
     }
 }
