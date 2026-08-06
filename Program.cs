@@ -9,9 +9,11 @@ namespace Console_educational_project
             {
                 Console.OutputEncoding = Encoding.UTF8;
             }
-            ProductCatalog productCatalog = new ProductCatalog();
-            productCatalog.PrintAllProducts();
-            productCatalog.TotalPrice();
+             ProductCatalog catalog = new ProductCatalog(); 
+            
+            catalog.PrintAllProducts(); 
+            catalog.TotalPrice();
+
             bool isRunning = true;
              while (isRunning)
         {
@@ -36,7 +38,7 @@ namespace Console_educational_project
                     break;
                 case "3":
                    
-                    catalog.PrintTotalPrice(); 
+                    catalog.TotalPrice(); 
                     break;
                 case "0":
                     isRunning = false;
