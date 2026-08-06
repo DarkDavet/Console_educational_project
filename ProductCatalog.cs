@@ -66,5 +66,25 @@ namespace Console_educational_project
             shopCart.Add(new Product { Name = name, Price = price, Category = category });
             Console.WriteLine("Товар добавлен");
         }
+         public void FilterCategory()
+        {
+            Console.Write("Введите категорию для поиска: ");
+            string searchCategory = Console.ReadLine();
+            bool found = false;
+
+            foreach (Product prod in shopCart)
+            {
+                if (prod.Category.Equals(searchCategory, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine($"Товар: {prod.Name}, Цена: {prod.Price} руб.");
+                    found = true;
+                }
+            }
+
+            if (!found)
+            {
+                Console.WriteLine("Товары в данной категории не найдены.");
+            }
+        }
     }
 }
