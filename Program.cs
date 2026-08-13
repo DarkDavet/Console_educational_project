@@ -24,7 +24,18 @@ namespace Console_educational_project
           // вариант 2
           welcomeMessege.PrintWelcomeMessage2("Rodion");
           welcomeMessege.CalculateSomething2(1,2);
-          welcomeMessege.GetProgramVersion();
+
+            // вариант 1
+            string progVer;
+            progVer = welcomeMessege.GetProgramVersion();
+            Console.WriteLine("Текущая версия программы: " + progVer);
+
+            // вариант 2
+            string prohVer2 = welcomeMessege.GetProgramVersion();          
+            Console.WriteLine("Текущая версия программы: " + progVer);
+
+            // вариант 3
+            Console.WriteLine(welcomeMessege.GetProgramVersion());
         }
     }
 }
