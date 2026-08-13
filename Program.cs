@@ -13,7 +13,7 @@ namespace Console_educational_project
              MethodsExecuter  welcomeMessege = new  MethodsExecuter();
           welcomeMessege.CalculateSomething();
           welcomeMessege.PrintWelcomeMessage();
-         
+          welcomeMessege.PrintWelcomeMessage2(string name);
           welcomeMessege.ShowHelp();
         }
     }
