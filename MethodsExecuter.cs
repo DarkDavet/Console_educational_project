@@ -26,11 +26,12 @@ namespace Console_educational_project
             Console.WriteLine($"{a} + {b} = {result}");
         }
 
-        //Задание 1: Метод ShowHelp()
-        //Тип: Ничего не принимает, ничего не возвращает.
-        //При вызове выводит в консоль три строчки с инструкцией для пользователя:
-        //"Для старта нажмите Enter"
-        //"Для выхода нажмите ESC"
-        //"Для помощи напишите /help"
+
+        public void ShowHelp()
+        {
+            Console.WriteLine("Для старта нажмите Enter");
+            Console.WriteLine("Для выхода нажмите ESC");
+            Console.WriteLine("Для помощи напишите /help");
+        }
     }
 }
