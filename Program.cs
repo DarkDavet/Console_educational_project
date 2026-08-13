@@ -29,7 +29,9 @@ namespace Console_educational_project
             string progVer;
             progVer = welcomeMessege.GetProgramVersion();
             Console.WriteLine("Текущая версия программы: " + progVer);
-
+            int userId = 123;
+            userId = welcomeMessege.GetUserId();
+            Console.WriteLine("Текущий ID: " +userId);
             // вариант 2
             string prohVer2 = welcomeMessege.GetProgramVersion();          
             Console.WriteLine("Текущая версия программы: " + progVer);
