@@ -13,8 +13,14 @@ namespace Console_educational_project
              MethodsExecuter  welcomeMessege = new  MethodsExecuter();
           welcomeMessege.CalculateSomething();
           welcomeMessege.PrintWelcomeMessage();
-          welcomeMessege.PrintWelcomeMessage2(string name);
           welcomeMessege.ShowHelp();
+
+          // вариант 1
+          string name = "Rodion";
+          welcomeMessege.PrintWelcomeMessage2(name);
+          
+          // вариант 2
+          welcomeMessege.PrintWelcomeMessage2("Rodion");
         }
     }
 }
