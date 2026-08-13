@@ -11,8 +11,10 @@ namespace Console_educational_project
                 Console.OutputEncoding = Encoding.UTF8;
             }
              MethodsExecuter  welcomeMessege = new  MethodsExecuter();
-         welcomeMessege.CalculateSomething();
+          welcomeMessege.CalculateSomething();
           welcomeMessege.PrintWelcomeMessage();
+         
+          welcomeMessege.ShowHelp();
         }
     }
 }
