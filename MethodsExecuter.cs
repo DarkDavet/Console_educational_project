@@ -33,5 +33,22 @@ namespace Console_educational_project
             Console.WriteLine("Для выхода нажмите ESC");
             Console.WriteLine("Для помощи напишите /help");
         }
+
+        // Метод "Исполнитель-приёмник" - принимает данные(параметры) извне
+        // и выполняет ту логику, что прописана внутри, используя принятые данные.
+        // Принимает на вход имя пользователя (string name) и здоровается лично с ним
+        // С одним параметром; ничего не возвращает
+        public void PrintWelcomeMessage2(string name)
+        {
+            Console.WriteLine($"Привет, {name}! Рады тебя видеть.");
+        }
+
+        // С двумя параметрами; ничего не возвращает
+        public void CalculateSomething2(int a, int b)
+        {
+            int result = a + b;
+
+            Console.WriteLine($"{a} + {b} = {result}");
+        }
     }
 }
