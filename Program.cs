@@ -24,6 +24,7 @@ namespace Console_educational_project
           // вариант 2
           welcomeMessege.PrintWelcomeMessage2("Rodion");
           welcomeMessege.CalculateSomething2(1,2);
+          welcomeMessege.GetProgramVersion();
         }
     }
 }
