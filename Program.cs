@@ -18,9 +18,12 @@ namespace Console_educational_project
           // вариант 1
           string name = "Rodion";
           welcomeMessege.PrintWelcomeMessage2(name);
-          
+          int a=1;
+          int b=2;
+          welcomeMessege.CalculateSomething2(a,b);
           // вариант 2
           welcomeMessege.PrintWelcomeMessage2("Rodion");
+          welcomeMessege.CalculateSomething2(1,2);
         }
     }
 }
