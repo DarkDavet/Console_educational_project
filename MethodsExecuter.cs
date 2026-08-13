@@ -50,5 +50,20 @@ namespace Console_educational_project
 
             Console.WriteLine($"{a} + {b} = {result}");
         }
+
+        // Метод "Информатор" - сообщает и передаёт данные указанного возвращаемого типа (в данном случае - string)
+        // Если вызвать этот метод, то он сообщает текущую версию программы
+        // Без параметров; возвращает данные типа string
+        public string GetProgramVersion()
+        {
+            return "v1.4.2-beta";
+        }
+
+        // Без параметров; возвращает данные типа int
+        public int GetUserId()
+        {
+            int userId = 123;
+            return userId;
+        }
     }
 }
