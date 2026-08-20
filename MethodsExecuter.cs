@@ -88,5 +88,13 @@ namespace Console_educational_project
         //Тип: Принимает данные и возвращает результат.
         //Принимает на вход два числа: исходную цену товара (int price) и процент скидки (int discountPercent).
         //Метод вычисляет сумму скидки в рублях и возвращает.
+        public int CalculateDiscount(int price, int discountPercent)
+{
+    
+    int discountAmount = (price * discountPercent) / 100;
+    
+    return discountAmount;
+}
+
     }
 }
