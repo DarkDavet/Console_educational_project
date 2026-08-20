@@ -39,7 +39,12 @@ namespace Console_educational_project
              Console.WriteLine("Текущий ID: " +userId);
             // вариант 3
             Console.WriteLine(welcomeMessege.GetProgramVersion());
-             Console.WriteLine(welcomeMessege.GetUserId());
+            Console.WriteLine(welcomeMessege.GetUserId());
+            int sum = welcomeMessege.CalculateSomething3(20, 30);
+             Console.WriteLine(sum);
+            List<string> myUsers = new List<string> { "Анна", "Иван" };
+            int totalUsers = welcomeMessege.CountAllUsers(myUsers);
+            Console.WriteLine(totalUsers);
         }
     }
 }
