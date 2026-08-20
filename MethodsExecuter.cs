@@ -65,5 +65,23 @@ namespace Console_educational_project
             int userId = 123;
             return userId;
         }
+
+        // Метод "Универсал" - и принимает данные(параметры) и передаёт данные указанного возвращаемого типа 
+        // Принимает два числа, складывает их и возвращает результат в виде числа
+        public int CalculateSomething3(int a, int b)
+        {
+            int result = a + b;
+            return result;
+        }
+
+        public int CountAllUsers(List<string> users)
+        {
+            int count = 0;
+            foreach (string user in users)
+            {
+                count++;
+            }
+            return count;
+        }
     }
 }
