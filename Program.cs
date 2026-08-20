@@ -45,6 +45,13 @@ namespace Console_educational_project
             List<string> myUsers = new List<string> { "Анна", "Иван" };
             int totalUsers = welcomeMessege.CountAllUsers(myUsers);
             Console.WriteLine(totalUsers);
+            
+              int currentDiscount= 20;
+            int currentPrice;
+            int rubDiscount = welcomeMessege.CalculateDiscount(currentPrice, currentDiscount);
+          
+            Console.ReadLine(currentPrice);
+            Console.WriteLine($"Сумма скидки составит: {rubDiscount} руб."); 
         }
     }
 }
