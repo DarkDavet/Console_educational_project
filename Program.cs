@@ -49,8 +49,9 @@ namespace Console_educational_project
               int currentDiscount= 20;
             int currentPrice;
             int rubDiscount = welcomeMessege.CalculateDiscount(currentPrice, currentDiscount);
-          
-            Console.ReadLine(currentPrice);
+
+            currentPrice = Convert.ToInt32(Console.ReadLine());
+           // currentPrice = int.Parse(Console.ReadLine());
             Console.WriteLine($"Сумма скидки составит: {rubDiscount} руб."); 
         }
     }
