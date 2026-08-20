@@ -47,7 +47,7 @@ namespace Console_educational_project
             Console.WriteLine(totalUsers);
             
               int currentDiscount= 20;
-            int currentPrice;
+            int currentPrice=5555;
             int rubDiscount = welcomeMessege.CalculateDiscount(currentPrice, currentDiscount);
 
             currentPrice = Convert.ToInt32(Console.ReadLine());
