@@ -83,5 +83,10 @@ namespace Console_educational_project
             }
             return count;
         }
+
+        //Задание 4: Метод CalculateDiscount()
+        //Тип: Принимает данные и возвращает результат.
+        //Принимает на вход два числа: исходную цену товара (int price) и процент скидки (int discountPercent).
+        //Метод вычисляет сумму скидки в рублях и возвращает.
     }
 }
