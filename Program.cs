@@ -8,6 +8,7 @@ namespace Console_educational_project
         {
             {
                 Console.OutputEncoding = Encoding.UTF8;
+                Warrior warrior_1= new Warrior("11", 2,3);
             }
   
         }
