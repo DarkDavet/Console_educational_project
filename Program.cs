@@ -5,10 +5,11 @@ namespace Console_educational_project
     internal class Program
     {
         // Задание:
-        // Создать класс мага
+        // Создать класс мага, унаследовать от класса Hero
         // Добавить магу уникальное свойство Mana.
-        // В методе Main создать объекты Warrior и Wizard.
-        // Вызвать у обоих унаследованный метод ShowInfo().
+        // Создать конструктор по аналогии с классом Warrior
+        // В методе Main создать объект Wizard.
+        // Вызвать у него унаследованный метод ShowInfo().
         static void Main(string[] args)
         {
             {
