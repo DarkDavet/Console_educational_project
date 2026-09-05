@@ -24,5 +24,12 @@ namespace Console_educational_project
             // Обрати внимание: мы можем использовать baseSpeed, так как оно protected в Hero
             Console.WriteLine($"{Name} заблокировал удар щитом! Скорость в броне: {baseSpeed - 2}");
         }
+
+        // Ключевое слово override заменяет родительский метод на этот
+        // Если бы мы НЕ написали override, воин атаковал бы кулаками, как обычный Hero
+        public override void Attack()
+        {
+            Console.WriteLine($"{Name} яростно бьёт мечом! ⚔️");
+        }
     }
 }
