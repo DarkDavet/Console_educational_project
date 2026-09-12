@@ -25,7 +25,7 @@ namespace Console_educational_project
         }
 
         // Общий метод, который автоматически достанется всем потомкам
-        public void ShowInfo()
+        public virtual void ShowInfo()
         {
             Console.WriteLine($"[Герой] Имя: {Name} | Здоровье: {Health} ОЗ | Базовая скорость: {baseSpeed}"); //
         }

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Console_educational_project
 {
@@ -25,6 +25,12 @@ namespace Console_educational_project
                 
                 base.Attack();
             }
+        }
+
+        public override void ShowInfo()
+        {
+            base.ShowInfo();
+            Console.WriteLine($"Сила заклинаний: {_spellPower} Запас маны: {Mana}.");
         }
     }
 }
