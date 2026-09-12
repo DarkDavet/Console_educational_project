@@ -20,6 +20,9 @@ namespace Console_educational_project
             Warrior warrior_1 = new Warrior("11", 2, 3);
             warrior_1.ShowInfo();
             warrior_1.BlockAttack();
+
+             Mage mage_1=new Mage("1",2,3,4);
+             mage_1.Attack();
         }
     }
 }
