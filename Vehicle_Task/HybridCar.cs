@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace Console_educational_project.Vehicle_Task
 {
-    // НАСЛЕДНИК 3 (Дополнительный класс для быстрой практики)
-    class HybridCar
+    
+   
+    public class HybridCar : Vehicle
     {
         public HybridCar(string model) : base(model) { }
 
-        // TODO: Переопредели метод StartEngine так, чтобы он:
-        // 1. Сначала вызвал базовый метод родителя (вывел "Двигатель заведен.")
-        // 2. А затем вывел свою уникальную строку: "[Model] переключился на электротягу."
-        public void StartEngine()
+        
+        public override void StartEngine()
         {
-       
+           
+            base.StartEngine(); 
+            
+           
+            Console.WriteLine($"{Model} переключился на электротягу.");
         }
     }
 }
