@@ -27,6 +27,33 @@ namespace Console_educational_project
 
             Hero hero_the_best = new Hero("John", 1);
             hero_the_best.Attack();
+            
+             Vehicle ordinaryCar = new Vehicle("Обычный автомобиль");
+
+        
+            SportsCar ferrari = new SportsCar("Ferrari F40");
+
+          
+            ElectricCar tesla = new ElectricCar("Tesla Model S");
+
+            
+            HybridCar toyota = new HybridCar("Toyota Prius");
+
+            Console.WriteLine("--- Запуск двигателей через точку --- \n");
+
+          
+            ordinaryCar.StartEngine();
+            Console.WriteLine();
+
+            ferrari.StartEngine();
+            Console.WriteLine();
+
+            tesla.StartEngine();
+            Console.WriteLine();
+
+            toyota.StartEngine();
+
+            Console.ReadLine(); 
         }
     }
 }
