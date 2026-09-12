@@ -23,6 +23,9 @@ namespace Console_educational_project
 
              Mage mage_1=new Mage("1",2,3,4);
              mage_1.Attack();
+
+            Hero hero_the_best = new Hero("John", 1);
+            hero_the_best.Attack();
         }
     }
 }
