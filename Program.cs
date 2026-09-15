@@ -1,6 +1,9 @@
 ﻿using System.Text;
 using Console_educational_project.Vehicle_Task ;
+using Console_educational_project.SmartDevices;
 namespace Console_educational_project
+s
+
 {
     internal class Program
     {
@@ -11,11 +14,12 @@ namespace Console_educational_project
                 Console.OutputEncoding = Encoding.UTF8;
                
             }
-           rpgehecutor rpg = new  rpgehecutor();
-           rpg.ehecuterpheroes ();
-           cars car = new cars();
-           car.cars_2();
-            
+           //rpgehecutor rpg = new  rpgehecutor();
+           //rpg.ehecuterpheroes ();
+           //cars car = new cars();
+          // car.cars_2();
+          SmartDevicesExecuter Device = new     SmartDevicesExecuter();
+           Device.ExecuteSmartLamps();
            
 
             
