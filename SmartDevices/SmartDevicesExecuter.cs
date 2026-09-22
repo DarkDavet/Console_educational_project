@@ -12,7 +12,7 @@ namespace Console_educational_project.SmartDevices
         {
             Console.WriteLine(" Система умный\n");
 
-            // SmartDevice device = new SmartDevice("Китай-Прибор", 100);  ---- объект абстрактного класса создавать нельзя !!!
+           
 
             SmartLamp livingRoomLamp = new SmartLamp("Philips Hue", 9, "Тёплый белый");
 

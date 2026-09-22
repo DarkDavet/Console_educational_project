@@ -2,7 +2,7 @@
 using Console_educational_project.Vehicle_Task ;
 using Console_educational_project.SmartDevices;
 namespace Console_educational_project
-s
+
 
 {
     internal class Program
