@@ -1,8 +1,3 @@
-﻿using System.Text;
-using Console_educational_project.Vehicle_Task ;
-using Console_educational_project.SmartDevices;
-namespace Console_educational_project
-
 // Задание 1 : Создание робота-пылесоса
 // Создай класс SmartVacuum (Умный пылесос), который наследуется от SmartDevice.
 // Добавь ему уникальное свойство WaterTankCapacity (объём бака для воды в литрах, тип double).
@@ -13,26 +8,34 @@ namespace Console_educational_project
 // Если выключен — сообщает, что питания нет.
 // В классе SmartDevicesExecuter создай метод для выполнения команд с пылесосом
 // Создай в этом методе пылесос любого бренда, включи его и запусти работу.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Console_educational_project.SmartDevices
 {
-    internal class Program
+    public class Smartvacuum : SmartDevice
     {
+        public double Watertank { get; set; }
 
-        static void Main(string[] args)
+        public Smartvacuum(string brand, int power, double watertank) : base(brand, power)
         {
-            {
-                Console.OutputEncoding = Encoding.UTF8;
-               
-            }
-           //rpgehecutor rpg = new  rpgehecutor();
-           //rpg.ehecuterpheroes ();
-           //cars car = new cars();
-          // car.cars_2();
-          SmartDevicesExecuter Device = new     SmartDevicesExecuter();
-           Device.ExecuteSmartLamps();
-           Device.ExecuteSmartvacuum();
-           
+            Watertank = watertank;
+        }
 
-            
+        // ОБЯЗАТЕЛЬНАЯ реализация абстрактного метода родителя
+        public override void PerformWork()
+        {
+            if (IsOn)
+            {
+                Console.WriteLine($"💡 [{Brand}] Обьем оставшейся воды {watertank}, потребляет {PowerConsumption} Вт.");
+            }
+            else
+            {
+                Console.WriteLine($"❌ [{Brand}] робот пылесос выключен");
+            }
         }
     }
 }
