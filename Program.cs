@@ -23,16 +23,7 @@ namespace Console_educational_project
                 Console.OutputEncoding = Encoding.UTF8;
                
             }
-           //rpgehecutor rpg = new  rpgehecutor();
-           //rpg.ehecuterpheroes ();
-           //cars car = new cars();
-          // car.cars_2();
-          SmartDevicesExecuter Device = new     SmartDevicesExecuter();
-           Device.ExecuteSmartLamps();
-           Device.ExecuteSmartvacuum();
-           
-
-            
+             
         }
     }
 }
