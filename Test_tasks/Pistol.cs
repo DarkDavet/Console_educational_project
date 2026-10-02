@@ -8,7 +8,7 @@ namespace Console_educational_project.Test_tasks
 {
     class Pistol : Weapon
     {
-        public void Reload()
+          public override void  Reload()
         {
             Console.WriteLine("Пистолет перезаряжен.");
         }

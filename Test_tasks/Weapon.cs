@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Console_educational_project.Test_tasks
 {
-    abstract class Weapon
+    public abstract class Weapon
     {
-        public Fire()
+        public void Fire()
         {
             Console.WriteLine("Выстрел!");
         }
