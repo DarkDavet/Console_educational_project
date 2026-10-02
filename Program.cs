@@ -1,6 +1,6 @@
-﻿using System.Text;
-using Console_educational_project.Vehicle_Task ;
-using Console_educational_project.SmartDevices;
+﻿using Console_educational_project.SmartDevices;
+using Console_educational_project.Test_tasks;
+using System.Text;
 namespace Console_educational_project
 
 // Задание 1 : Создание робота-пылесоса
@@ -23,7 +23,14 @@ namespace Console_educational_project
                 Console.OutputEncoding = Encoding.UTF8;
                
             }
-             
+            Weapon myWeapon = new Weapon();
+
+            int ammo = "10"; 
+
+            for (int i = 0; i < ammo; i--)
+            {
+                Console.WriteLine("Стреляем!");
+            }
         }
     }
 }
