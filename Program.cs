@@ -13,13 +13,13 @@ namespace Console_educational_project
                 Console.OutputEncoding = Encoding.UTF8;
                
             }
-            Weapon myWeapon = new Weapon();
+           Pistol myPistol = new  Pistol();
 
-            int ammo = "10"; 
+            int ammo = 10; 
 
             for (int i = 0; i < ammo; i--)
             {
-                Console.WriteLine("Стреляем!");
+                //Console.WriteLine("Стреляем!");
             }
         }
     }
