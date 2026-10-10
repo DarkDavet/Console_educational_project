@@ -25,7 +25,7 @@ namespace Console_educational_project
                 if (monster.Health<=0)break;
                 monster.Attack(player);
             }
-            Console.WriteLine(player.Health>0 ? "/nПобеда":"/nПройгрыш");
+            Console.WriteLine(player.Health>0 ? "\nПобеда":"\nПройгрыш");
         }
     }
 }
