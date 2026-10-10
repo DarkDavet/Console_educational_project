@@ -13,9 +13,7 @@ namespace Console_educational_project.Test_tasks
             Console.WriteLine("Выстрел!");
         }
 
-        public abstract void Reload()
-        {
-            Console.WriteLine("Перезарядка");
-        }
+        public abstract void Reload();
+      
     }
 }
