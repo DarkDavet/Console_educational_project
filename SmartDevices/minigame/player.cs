@@ -7,12 +7,12 @@
    public override void Attack(Caracter target)
         {
             target.Health = target.Health - Damage;
-            Console.Writeln($"{Name} ударил {target.Name} и нанес {Damage} урона");
+            Console.WriteLine($"{Name} ударил {target.Name} и нанес {Damage} урона");
         }
        public void Heal()
         {
             Health+=20;
-            Console.Writeln($"{Name} полечился на 20 hp");
+            Console.WriteLine($"{Name} полечился на 20 hp");
         }
 }
 }

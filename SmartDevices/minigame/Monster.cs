@@ -6,8 +6,8 @@ namespace Minigame
         public override void Attack(Caracter target)
         {
              target.Health = target.Health - Damage;
-            Console.Writeln($"{Name} ударил {target.Name} и нанес {Damage} урона , у {target.Name} осталось {target.Health} hp");
+            Console.WriteLine($"{Name} ударил {target.Name} и нанес {Damage} урона , у {target.Name} осталось {target.Health} hp");
         }
-        
+
     }
 }
