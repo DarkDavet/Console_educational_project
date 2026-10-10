@@ -1,5 +1,6 @@
 ﻿using Console_educational_project.SmartDevices;
 using Console_educational_project.Test_tasks;
+using Minigame;
 using System.Text;
 namespace Console_educational_project
 
@@ -13,15 +14,18 @@ namespace Console_educational_project
                 Console.OutputEncoding = Encoding.UTF8;
                
             }
-           Pistol myPistol = new  Pistol();
-
-            int ammo = 10; 
-
-            for (int i = 0; i < ammo; i++)
+          Player player= new Player("Воин" , 100, 15);
+          Monster monster = new Monster("Гоблин", 50, 10);
+          while (player.Health>0&& monster.Health > 0)
             {
-                myPistol.Fire();
-             
+                Console.Writeln("Выберите действие 1- атака, 2-лечение");
+                string choise = Console>Readln();
+                if(choise=="1")player.Attack(monster);
+                else if (choise=="2")player.Heal();
+                if (monster.Health<=0)break;
+                monster.Attack(player);
             }
+            Console.Writeln(player.Health>0 ? "/nПобеда":"/nПройгрыш");
         }
     }
 }
