@@ -11,8 +11,8 @@ namespace Console_educational_project.SmartDevices
          public void ExecuteSmartvacuum()
          {
             
-            Smartvacuum vacuum = new Smartvacuum("Samsung", 10, 111);
-            vacuum .PerformWork();
+            //Smartvacuum vacuum = new Smartvacuum("Samsung", 10, 111);
+            //vacuum .PerformWork();
          }
         public void ExecuteSmartLamps()
         {
