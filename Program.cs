@@ -17,9 +17,10 @@ namespace Console_educational_project
 
             int ammo = 10; 
 
-            for (int i = 0; i < ammo; i--)
+            for (int i = 0; i < ammo; i++)
             {
-                //Console.WriteLine("Стреляем!");
+                myPistol.Fire();
+             
             }
         }
     }
