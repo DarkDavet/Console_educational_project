@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Console_educational_project
 {
@@ -6,7 +7,25 @@ namespace Console_educational_project
     {
         static void Main(string[] args)
         {
+            Sword mysword= new Sword();
+
+            List<IDamageable> targets = new List<IDamageable>();
+            targets.Add(new Enemy("Троль"));
+            targets.Add(new  WoodenBox()); 
+            targets.Add(new  Door()); 
+
+            foreach (IDamageable target in targets)
+            {
+                mysword.Attack(target);
+            }
+
             Console.WriteLine();
+            Console.WriteLine("Удар по одной цели с интерфейсом:");
+            IDamageable target_concrete = new WoodenBox();
+            Console.WriteLine(target_concrete.Health);
+            mysword.Attack(target_concrete);
+            Door door = new Door();
+            mysword.Attack(door);
         }
     }
     abstract class BreakableObject()
