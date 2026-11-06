@@ -3,6 +3,16 @@ using System.Collections.Generic;
 
 namespace Console_educational_project
 {
+    // Задача 1:  добавь класс Barrel (бочка, наследник GameItem ),
+    // который можно ударить мечом. Прочность 20. Когда прочность падает до 0,
+    // бочка пишет БАБАХ! или что-то в этом роде . 
+    // Добавь бочку в список targets . Класс Sword менять нельзя.
+
+    // Задача 2. Создай интерфейс IHealable с методом void Heal(int amount).
+    // Пусть Player реализует и IDamageable, и IHealable . 
+    // Здоровье игрока 100, выше 100 подняться не может, ниже 0 — не опускается.
+    // Создай класс HealthPotion с методом Use(IHealable target) , который лечит на 25.
+    // Ударь игрока мечом два раза, потом используй зелье.
     internal class Program
     {
         static void Main(string[] args)
@@ -13,11 +23,15 @@ namespace Console_educational_project
             targets.Add(new Enemy("Троль"));
             targets.Add(new  WoodenBox()); 
             targets.Add(new  Door()); 
-
+            targets.Add(new Barrel());
             foreach (IDamageable target in targets)
             {
                 mysword.Attack(target);
             }
+
+             IDamageable barrel_1 = new Barrel();
+             mysword.Attack(barrel_1);
+             mysword.Attack(barrel_1);
 
             Console.WriteLine();
             Console.WriteLine("Удар по одной цели с интерфейсом:");
@@ -131,4 +145,25 @@ namespace Console_educational_project
             target.TakeDamage(Damage);
         }
     }
+    class Barrel : GameItem, IDamageable
+    {
+    public int Health { get; private set; } = 20;
+
+    public Barrel() : base("Деревянная бочка")
+    {
+    }
+
+    public void TakeDamage(int amount)
+    {
+        Health = Health - amount;
+        if (Health <= 0)
+            {
+             Health = 0;   
+              Console.WriteLine("БАБАХ!");
+            } 
+         
+    
+    }
+    }
+
 }
