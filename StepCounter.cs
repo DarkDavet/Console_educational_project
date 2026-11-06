@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Console_educational_project
 {
@@ -14,7 +14,7 @@ namespace Console_educational_project
             if (steps > 0)
             {
                  stepsCount+=steps;
-                 Console.WriteLine("пройдено {stepsCount} шагов");
+                 Console.WriteLine($"пройдено {stepsCount} шагов");
             }
             else
             {
