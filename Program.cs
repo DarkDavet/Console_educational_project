@@ -18,6 +18,9 @@ namespace Console_educational_project
             }
             MoneyBankExecuter moneyBankExecuter = new MoneyBankExecuter();
             moneyBankExecuter.Execute();
+            StepCounter stepcounter = new  StepCounter();
+            stepcounter.AddSteps(1500);
+             stepcounter.Reset();
         }
     }
 }
