@@ -22,7 +22,8 @@ namespace Console_educational_project
             }
 
         }
-         public void Reset()
+
+        public void Reset()
         {
            stepsCount=0; 
             Console.WriteLine("Число шагов обнулено");

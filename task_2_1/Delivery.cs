@@ -8,7 +8,7 @@ namespace Console_educational_project.task_2_1
 {
     internal class Delivery
     {
-        public int GetCost()
+        public virtual int GetCost()
         {
             return 30;
         }
