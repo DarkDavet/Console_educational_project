@@ -13,7 +13,10 @@ namespace Console_educational_project._2._2
             return "Проигрывает звук";
             
           }
-       
+        public void Print()
+        {
+            Console.WriteLine($" {Playmusic()} ");
+        }
 
     }
 }

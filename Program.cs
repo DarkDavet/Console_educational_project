@@ -1,7 +1,7 @@
 ﻿using Console_educational_project.task_1_1;
 using Console_educational_project.task_2_1;
 using System.Text;
-
+using Console_educational_project._2._2;
 namespace Console_educational_project
 {
     internal class Program
@@ -37,11 +37,18 @@ namespace Console_educational_project
             deliveries.Add(new Delivery());
             deliveries.Add(new ExpressDelivery());
             deliveries.Add(new TakeMyselfDelivery());
-            
             foreach (var delivery in deliveries)
-            {
+             {
                 delivery.Print();
+             }
+            List<Tool> instuments = new List<Tool>();
+            instuments.Add(new Drum() );
+            instuments.Add(new Guitar());
+            foreach (var instrument in instuments) 
+            {
+                instrument.Print();
             }
+
         }
 
 
