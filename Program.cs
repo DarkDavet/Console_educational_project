@@ -2,6 +2,7 @@
 using Console_educational_project.task_2_1;
 using System.Text;
 using Console_educational_project._2._2;
+using Console_educational_project._3._1;
 namespace Console_educational_project
 {
     internal class Program
@@ -21,6 +22,14 @@ namespace Console_educational_project
         // Задача 2.2 : Написать программу "Музыкальные инструменты".
         // Есть два музыкальных инструмента, у каждого есть свой звук: гитара и барабан.
         // Создать список инструментов и через цикл заставить их проиграть их звуки по одному разу.
+
+        // Задача 3.1 : Написать программу для вычисления площади разных фигур,
+        // используя интерфейсы.Посчитать сумму площадей всех добавленных фигур.
+
+        // Задача 3.2 : Написать программу для расчёта расходов на товары и услуги, используя интерфейсы.
+        // Создать товар в виде  книги с названием и ценой.
+        // Создать услугу поездки на такси со стоимостью посадки 5 р. и 1 р. за километр.
+        // Поместить купленную за 25 р. книгу и поездку на такси на 5 км. в один список и посчитать, сколько потрачено всего.
         static void Main(string[] args)
         {
             {
@@ -48,6 +57,20 @@ namespace Console_educational_project
             {
                 instrument.Print();
             }
+
+            List<IHasArea> figuries = new List<IHasArea>();
+            figuries.Add(new Circle(2));
+            figuries.Add(new Square(4));
+            figuries.Add(new Square(2));
+
+            double area_sum = 0;
+            foreach (IHasArea figure in figuries)
+            {
+                double area = 0;
+                area = figure.GetArea();
+                area_sum += area;
+            }
+            Console.WriteLine($"Общая площадь: {area_sum:F2}");
 
         }
 
